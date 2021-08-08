@@ -53,7 +53,7 @@ void main(void)
     ///     - ACLK - 32KHz, CCR0 = 1500
     ///     - so time = 1500/32Khz
     /////////////////////////////////////////////////
-    Timer_A_clearCaptureCompareInterrupt(TIMER_A1_BASE,
+    Timer_A_clearCaptureCompareInterrupt(TIMER_A0_BASE,
                                          TIMER_A_CAPTURECOMPARE_REGISTER_0); // Clearing CCI
     _enable_interrupts(); // Enabling the interrupts
     Timer_A_initUpModeParam param = { 0 }; // Creating Timer parameter object
